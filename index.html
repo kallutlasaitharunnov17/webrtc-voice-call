@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WebRTC Voice Call</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebRTC Voice Call</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>WebRTC Voice Call Demo</h1>
 
-<h1>🎧 WebRTC Voice Call</h1>
+  <button id="startBtn">Start Call</button>
+  <button id="endBtn" disabled>End Call</button>
 
-<button id="start">Start Call</button>
-<button id="answer">Answer</button>
-<button id="stop">Stop</button>
+  <h3>Your SDP Offer/Answer</h3>
+  <textarea id="localSDP" cols="60" rows="6" placeholder="Your SDP"></textarea>
 
-<p id="log">Log:</p>
+  <h3>Paste Remote SDP Here</h3>
+  <textarea id="remoteSDP" cols="60" rows="6" placeholder="Remote SDP"></textarea>
+  <button id="setRemoteBtn">Set Remote SDP</button>
 
-<audio id="remoteAudio" autoplay></audio>
+  <audio id="remoteAudio" autoplay></audio>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+
